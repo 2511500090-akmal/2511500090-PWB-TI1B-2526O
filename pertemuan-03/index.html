@@ -39,7 +39,19 @@
             <p><strong>Nama Adek:</strong>Nabilla Nasywa dan Rayya Azalea</p>
         </section id="contact">
             <h2>Kontak Kami</h2>
-            <p>Contoh Form</p>
+            <form action="" method="GET">
+                <label for="txtNama">Nama:</label>
+                <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
+                
+                <label for="txtEmail">Email:</label>
+                <input type="text" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
+                
+                <label for="txtPesan">Pesan:</label>
+                <textarea id="txtPesan" name="txtPesan" placeholder="Tulis Pesan anda..." required></textarea>
+                
+                <button type="submit">Kirim</button>
+                <button type="reset">Batal</button>
+            </form>
         </section>
     </main>
     <footer>
