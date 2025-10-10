@@ -91,6 +91,47 @@
             font-size: 14px;
             transition: 0.3s;
         }
+
+        #contact input:focus,
+        #contact textarea:focus {
+            border-color: #0078ff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 120, 255, 0.3);
+        }
+
+        #contact textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        #contact button {
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        #contact button[type="submit"] {
+            background-color: #0078ff;
+            color: #ffffff;
+        }
+
+        #contact button[type="submit"]:hover {
+            background-color: #e74c3c;
+        }
+
+        #contact button[type="reset"] {
+            background-color: #005ec2;
+            color: #ffffff;
+        }
+
+        #contact button[type="reset"]:hover {
+            background-color: #c0392b;
+        }
+
+        #contact form button + button {
+            margin-left: 10px;
+        }
         
     </style>
 </head>
@@ -136,7 +177,7 @@
                 <input type="text" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
                 
                 <label for="txtPesan">Pesan:</label>
-                <textarea id="txtPesan" name="txtPesan" placeholder="Tulis Pesan anda..." required></textarea>
+                <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis Pesan anda..." required></textarea>
                 
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
