@@ -55,12 +55,11 @@
         }
 
         #contact {
+            background-color: #f9f9f9;
             margin-top: 30px;
-            padding: 25px 30px;
+            padding: 20px 25px;
             border-top: 2px solid;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            border-radius: 8px;
             font-family: sans-serif;
         }
 
@@ -73,21 +72,17 @@
 
         #contact form {
             display: flex;
-            flex-direction: 600;
+            flex-direction: column;
             gap: 15px;
-        }
-
-        #contact label {
-            font-weight: 600;
-            color: #333;
+            width: 100%;
         }
 
         #contact input,
         #contact textarea {
             width: 100%;
-            padding: 10px 12px;
+            padding: 10px;
             border: 1px solid;
-            border-radius: 6px;
+            border-radius: 5px;
             font-size: 14px;
             transition: 0.3s;
         }
@@ -99,16 +94,18 @@
             box-shadow: 0 0 5px rgba(0, 120, 255, 0.3);
         }
 
-        #contact textarea {
-            resize: none;
-            height: 100px;
+        #contact .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
         }
 
         #contact button {
-            width: 100px;
-            padding: 10px;
+            padding: 8px 16px;
             border: none;
             border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
         }
 
         #contact button[type="submit"] {
@@ -116,37 +113,15 @@
             color: #ffffff;
         }
 
-        #contact button[type="submit"]:hover {
-            background-color: #e74c3c;
-        }
-
         #contact button[type="reset"] {
-            background-color: #005ec2;
-            color: #ffffff;
+            background-color: #ccc
+            color: black;
         }
 
         #contact button[type="reset"]:hover {
             background-color: #c0392b;
         }
 
-        #contact form button + button {
-            margin-left: 10px;
-        }
-
-        @media (max-width: 600px) {
-            #contact {
-                padding: 20px;
-            }
-
-            #contact button {
-                width: 100px;
-                margin: 5px 0;
-            }
-
-            #contact button + button {
-                margin-left: 0;
-            }
-        }
         
     </style>
 </head>
@@ -186,16 +161,19 @@
             <h2>Kontak Kami</h2>
             <form action="" method="GET">
                 <label for="txtNama">Nama:</label>
-                <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
+                <input maxlength="30" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
                 
                 <label for="txtEmail">Email:</label>
-                <input type="text" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
+                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
                 
                 <label for="txtPesan">Pesan:</label>
                 <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis Pesan anda..." required></textarea>
-                
+
+                <div class="button-group">
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
+                </div>
+
             </form>
         </section>
     </main>
