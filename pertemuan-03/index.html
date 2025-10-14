@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Judul Halaman</title>
+
     <style>
 
         #about {
@@ -29,7 +30,7 @@
             align-items: baseline;
             margin: 0;
             padding: 6px 0;
-            border-bottom: 1px #000000;
+            border-bottom: 1px solid #000000;
         }
 
         #about strong {
@@ -54,112 +55,149 @@
             }
         }
 
+
         #contact {
-      background-color: #ffffff;
-      margin: 50px auto;
-      padding: 30px 40px;
-      max-width: 500px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+            background-color: #ff0000;
+            margin: 50px auto;
+            padding: 30px 40px;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    #contact h2 {
-      color: #222;
-      font-size: 26px;
-      margin-bottom: 20px;
-      text-align: center;
-      border-bottom: 2px solid #007bff;
-      padding-bottom: 10px;
-    }
+        #contact h2 {
+            color: #222;
+            font-size: 26px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
 
-    #contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-    #contact input,
-    #contact textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
-    }
+        #contact input,
+        #contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
 
-    #contact button {
-      padding: 10px;
-      border: none;
-      border-radius: 6px;
-      background-color: #007bff;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+        #contact button {
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
 
-    #contact button:hover {
-      background-color: #0056b3;
-    }
+        #contact button:hover {
+            background-color: #0056b3;
+        }
 
+        /* ====== TAMBAHAN UMUM ====== */
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background: #f0f0f0;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Ini Header</h1>
         <nav>
             <ul>
-                <li><a href="home">Beranda</a></li>
-                <li><a href="about">Tentang</a></li>
-                <li><a href="contact">Kontak</a></li>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <sectiion>
+        <section id="home">
             <h2>Selamat Datang</h2>
             <p>Ini Contoh Paragraf HTML.</p>
-        </sectiion>
-        <sectiion>
-            <h2>Tentang Kami</h2>
-            <p>HTML digunakan untuk membuat struktur halaman web.</p>
-        </sectiion>
+        </section>
+
         <section id="about">
             <h2>Tentang Saya</h2>
             <p><strong>NIM:</strong> 2511500090</p>
-            <p><strong>Nama Lengkap:</strong> Akmal Fadhillah Dwiputra 😎</p>
+            <p><strong>Nama Lengkap:</strong> Akmal Fadhillah Dwiputra</p>
             <p><strong>Tempat Lahir:</strong> Pangkalpinang</p>
-            <p><strong>Tanggal Lahir:</strong> 29 Maret 2004</p>
-            <p><strong>Hobby:</strong> Push Rank ML🎮</p>
-            <p><strong>Pasangan:</strong> Sakina💞</p>
-            <p><strong>Pekerjaan:</strong> Bantu orang tua dan Mengaji😏</p>
-            <p><strong>Nama Orang Tua:</strong> Firta Karini👩‍🦰dan Defiar Fitriansyah👨‍🦰</p>
+            <p><strong>Tanggal Lahir:</strong> 29 Maret</p>
+            <p><strong>Hobby:</strong> Push Rank ML</p>
+            <p><strong>Pasangan:</strong> Sakina 💞</p>
+            <p><strong>Pekerjaan:</strong> Bantu orang tua dan mengaji 😇</p>
+            <p><strong>Nama Orang Tua:</strong> Fitra Karim dan Defiar Fitriansyah 👨‍👩‍👧‍👧</p>
             <p><strong>Nama Kakak:</strong> Revia Defika</p>
-            <p><strong>Nama Adek:</strong> Nabilla Nasywa dan Rayya Azalea</p>
-        </section id="contact">
-            <h2>Kontak Kami</h2>
-            <form action="" method="GET">
-            <div class="form-group"
-                <label for="txtNama">Nama:</label>
-                <input maxlength="30" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
-            </div>
-                
-            <div class="form-group"
-                <label for="txtEmail">Email:</label>
-                <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
-            </div>
-                
-            <div class="form-group"
-                <label for="txtPesan">Pesan:</label>
-                <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis Pesan anda..." required></textarea>
-            </div>
+            <p><strong>Nama Adik:</strong> Nabilla Naswya dan Rayya Azalea</p>
+        </section>
 
-            <div class="button-group">
-                <button type="submit">Kirim</button>
-                <button type="reset">Batal</button>
-             </div>
+        <section id="contact">
+            <h2>Kontak Kami</h2>
+            <form action="#" method="GET">
+                <div class="form-group">
+                    <label for="txtNama">Nama:</label>
+                    <input maxlength="30" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtEmail">Email:</label>
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtPesan">Pesan:</label>
+                    <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis Pesan Anda..." required></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Kirim</button>
+                    <button type="reset">Batal</button>
+                </div>
             </form>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Akmal Fadhillah Dwiputra [2511500090]</p>
     </footer>
