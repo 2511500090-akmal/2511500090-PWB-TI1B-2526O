@@ -54,73 +54,6 @@
             }
         }
 
-        #contact {
-            background-color: #f9f9f9;
-            margin-top: 30px;
-            padding: 20px 25px;
-            border-top: 2px solid;
-            border-radius: 8px;
-            font-family: sans-serif;
-        }
-
-        #contact h2 {
-            color: #222;
-            font-size: 22px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-
-        #contact form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 100%;
-        }
-
-        #contact input,
-        #contact textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid;
-            border-radius: 5px;
-            font-size: 14px;
-            transition: 0.3s;
-        }
-
-        #contact input:focus,
-        #contact textarea:focus {
-            border-color: #0078ff;
-            outline: none;
-            box-shadow: 0 0 5px rgba(0, 120, 255, 0.3);
-        }
-
-        #contact .button-group {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        #contact button {
-            padding: 8px 16px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        #contact button[type="submit"] {
-            background-color: #0078ff;
-            color: #ffffff;
-        }
-
-        #contact button[type="reset"] {
-            background-color: #ccc
-            color: black;
-        }
-
-        #contact button[type="reset"]:hover {
-            background-color: #c0392b;
-        }
 
         
     </style>
@@ -160,20 +93,25 @@
         </section id="contact">
             <h2>Kontak Kami</h2>
             <form action="" method="GET">
+            <div class="form-group"
                 <label for="txtNama">Nama:</label>
                 <input maxlength="30" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
+            </div>
                 
+            <div class="form-group"
                 <label for="txtEmail">Email:</label>
                 <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
+            </div>
                 
+            <div class="form-group"
                 <label for="txtPesan">Pesan:</label>
                 <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis Pesan anda..." required></textarea>
+            </div>
 
-                <div class="button-group">
+            <div class="button-group">
                 <button type="submit">Kirim</button>
                 <button type="reset">Batal</button>
-                </div>
-
+             </div>
             </form>
         </section>
     </main>
