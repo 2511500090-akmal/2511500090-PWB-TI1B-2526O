@@ -55,63 +55,105 @@
             }
         }
 
+/* ====== BAGIAN CONTACT - SIMPLE & ELEGAN ====== */
 #contact {
-    background: linear-gradient(135deg, #007bff, #00bfff);
+    background-color: #ffffff;
     margin: 60px auto;
     padding: 40px 50px;
     max-width: 550px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#contact:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    color: #333;
 }
 
 #contact h2 {
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
     margin-bottom: 25px;
-    color: #fff;
-    letter-spacing: 1px;
-    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 10px;
+    color: #222;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 8px;
 }
 
-/* Form Layout */
 #contact form {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 16px;
+    margin-top: 20px;
 }
 
-/* Label */
 #contact label {
     font-weight: 500;
     margin-bottom: 6px;
     display: block;
-    color: #f8f9fa;
+    color: #444;
 }
 
-/* Input & Textarea */
 #contact input,
 #contact textarea {
     width: 100%;
     padding: 12px 14px;
-    border: none;
-    border-radius: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     font-size: 15px;
-    outline: none;
-    color: #333;
-    background: #fff;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s eas
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fafafa;
+}
 
-        
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    background-color: #fff;
+    outline: none;
+}
+
+#contact button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#contact button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#contact button[type="reset"] {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+#contact button[type="reset"]:hover {
+    background-color: #d6d6d6;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    #contact {
+        padding: 30px 25px;
+        border-radius: 12px;
+    }
+
+    #contact h2 {
+        font-size: 22px;
+    }
+
+    #contact button {
+        font-size: 14px;
+    }
+}
+
     </style>
 </head>
 <body>
