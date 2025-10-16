@@ -55,129 +55,125 @@
             }
         }
 
+            #contact {
+                background-color: #ffffff;
+                margin: 60px auto;
+                padding: 45px 50px;
+                max-width: 550px;
+                border-radius: 16px;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+                font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                color: #333;
+                text-align: center;
+        }
 
-#contact {
-    background-color: #ffffff;
-    margin: 60px auto;
-    padding: 45px 50px;
-    max-width: 550px;
-    border-radius: 16px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    text-align: center;
-}
+            #contact h2 {
+                position: relative;
+                font-size: 26px;
+                color: #222;
+                display: inline-block;
+                margin-bottom: 35px;
+                padding-bottom: 10px;
+                font-weight: 600;
+        }
 
-#contact h2 {
-    position: relative;
-    font-size: 26px;
-    color: #222;
-    display: inline-block;
-    margin-bottom: 35px;
-    padding-bottom: 10px;
-    font-weight: 600;
-}
+            #contact  h2::before {
+                content: "✉️";
+                font-size: 28px;
+                display: block;
+                margin-bottom: 8px;
+        }
 
+            #contact h2::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50px;
+                height: 3px;
+                background-color: #007bff;
+                border-radius: 3px;
+        }
 
-#contact h2::before {
-    content: "✉️";
-    font-size: 28px;
-    display: block;
-    margin-bottom: 8px;
-}
+            #contact form {
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                margin-top: 20px;
+                text-align: left;
+        }
 
+            #contact label {
+                font-weight: 500;
+                margin-bottom: 6px;
+                color: #444;
+        }
 
-#contact h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 3px;
-    background-color: #007bff;
-    border-radius: 3px;
-}
+            #contact input,
+            #contact textarea {
+                width: 100%;
+                padding: 12px 14px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                font-size: 15px;
+                transition: border-color 0.3s ease, box-shadow 0.3s ease;
+                background-color: #fafafa;
+        }
 
+            #contact input:focus,
+            #contact textarea:focus {
+                border-color: #007bff;
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.12);
+                background-color: #fff;
+                outline: none;
+        }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    margin-top: 20px;
-    text-align: left;
-}
+            #contact button {
+                padding: 12px;
+                border: none;
+                border-radius: 8px;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+        }
 
-#contact label {
-    font-weight: 500;
-    margin-bottom: 6px;
-    color: #444;
-}
+            #contact button[type="submit"] {
+                background-color: #006adb;
+                color: #fff;
+        }
 
-#contact input,
-#contact textarea {
-    width: 100%;
-    padding: 12px 14px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 15px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fafafa;
-}
+            #contact button[type="submit"]:hover {
+                background-color: #00346c;
+        }
 
-#contact input:focus,
-#contact textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.12);
-    background-color: #fff;
-    outline: none;
-}
+            #contact button[type="reset"] {
+                background-color: #ff00bb;
+                color: #ffffff;
+        }
 
-/* Tombol */
-#contact button {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
+            #contact button[type="reset"]:hover {
+                background-color: #d6d6d6;
+        }
 
-#contact button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-}
+            @media (max-width: 600px) {
+                #contact {
+                   padding: 30px 25px;
+                   border-radius: 12px;
+                }
 
-#contact button[type="submit"]:hover {
-    background-color: #0056b3;
-}
+                #contact h2 {
+                   font-size: 22px;
+                }
 
-#contact button[type="reset"] {
-    background-color: #e9ecef;
-    color: #333;
-}
-
-#contact button[type="reset"]:hover {
-    background-color: #d6d6d6;
-}
-
-/* Responsif */
-@media (max-width: 600px) {
-    #contact {
-        padding: 30px 25px;
-        border-radius: 12px;
-    }
-
-    #contact h2 {
-        font-size: 22px;
-    }
-
-    #contact button {
-        font-size: 14px;
-    }
-}
-
+                #contact button {
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-right: 0;
+                   font-size: 14px;
+                } 
+        }
 
     </style>
 </head>
@@ -238,7 +234,6 @@
             </form>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2025 Akmal Fadhillah Dwiputra [2511500090]</p>
     </footer>
