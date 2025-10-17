@@ -187,7 +187,25 @@
                    font-size: 14px;
                    margin-top: 40px;
         }
+
+                header li a:hover {
+                   background-color: #000000;
+                   border-radius: 15px;
+                   transition: background-color 0.3s ease;
+        }
     
+                header li a:focus {
+                   outline: 3px solid #fff;
+                   outline-offset: 2px;
+                   border-radius: 6px;
+                   background-color: rgba(255, 255, 255, 0.15);
+        }
+
+                header li a:active {
+                   background-color: #fe0202;
+                   transform: translateY(1px);
+        } 
+
                 nav ul {
                    list-style: none;
                    display: flex;
