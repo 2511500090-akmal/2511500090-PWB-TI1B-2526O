@@ -95,7 +95,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     smallEl.style.marginLeft = offsetLeft + "px";
     smallEl.style.width = Math.round(rectInput.width) + "px";
     }
-
+    
     window.addEventListener("resize", () => {
         document.querySelectorAll(".error-msg").forEach(small => {
             const target = document.getElementById(small.dataset.forId);
