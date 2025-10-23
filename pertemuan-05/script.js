@@ -1,6 +1,8 @@
 document.getElementById("menuToogle").addEventListener("click", function () {
     document.querySelector("nav").classList.toggle("active");
 });
+
+
 document.querySelector("form").addEventListener("submit", function (e) {
     const nama = document.getElementById("txtNama").value.trim();
     const email = document.getElementById("txtEmail").value.trim();
@@ -13,9 +15,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
         alert("TerimaKasih, " + nama + "| Pesan Anda telah dikirim.");
     }
 });
-document.getElementById("menuToogle").addEventListener("click", function () {
-    document.querySelector("nav").classList.toggle("active");
-});
+
 document.querySelector("form").addEventListener("submit", function (e) {
     const nama = document.getElementById("txtNama").value.trim();
     const email = document.getElementById("txtEmail").value.trim();
