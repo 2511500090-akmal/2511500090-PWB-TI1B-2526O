@@ -1,3 +1,3 @@
 document.getElementById("menuToogle").addEventListener("click", function () {
-    document.querySelector("nav").classList.Toogle("active");
-})
+    document.querySelector("nav").classList.toggle("active");
+});
