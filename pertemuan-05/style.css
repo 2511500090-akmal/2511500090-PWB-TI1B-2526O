@@ -276,7 +276,7 @@
                     nav {
                         display: none;
                         flex-direction: column;
-                        background: #003366;
+                        background: #007bff, #00bcd4;
                         width: 100%;
                         padding: 5px 0;
                     }
