@@ -190,11 +190,11 @@
 
                 nav ul {
                     list-style: none;
-                    display: block;
+                    display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 28px;
-                    margin: 0;
+                    margin: 10px 0 0;
                     padding: 0;
         }
 
