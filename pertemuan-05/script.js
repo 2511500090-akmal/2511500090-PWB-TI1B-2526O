@@ -9,6 +9,12 @@ document.getElementById("menuToogle").addEventListener("click", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const homeSection = document.getElementById("home");
+    const ucapan = document.createElement("p");
+    ucapan.textContent = "Halo guys! Selamat datang di Halaman saya!";
+    homeSection.appendChild(ucapan);
+});
 
 document.querySelector("form").addEventListener("submit", function (e) {
     const nama = document.getElementById("txtNama").value.trim();
