@@ -1,5 +1,6 @@
 document.getElementById("menuToogle").addEventListener("click", function () {
-    document.querySelector("nav").classList.toggle("active");
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("active");
 });
 
 document.querySelector("form").addEventListener("submit", function (e) {
