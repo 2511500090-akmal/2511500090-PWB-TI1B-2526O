@@ -44,6 +44,20 @@
                     echo $NIM;
                     ?>
             </p>
+            <?php
+            $nama = "Akmal Fadhillah Dwiputra"
+            $umur = "21"
+            $tinggi = "158"
+            $aktif = true;
+            echo "Nama: $nama <br>";
+            echo "Umur: $umur tahun <br>";
+            echo "Tinggi: $tinggi meter <br>";
+            echo "Status aktif: " . ($aktif ? "Ya" : "Tidak") . "<br>";
+            var_dump($nama);
+            var_dump($umur);
+            var_dump($tinggi);
+            var_dump($aktif);
+            ?>
             <p><strong>NIM:</strong> 2511500090</p>
             <p><strong>Nama Lengkap:</strong> Akmal Fadhillah Dwiputra 😎</p>
             <p><strong>Tempat Lahir:</strong>Pangkalpinang😏</p>
