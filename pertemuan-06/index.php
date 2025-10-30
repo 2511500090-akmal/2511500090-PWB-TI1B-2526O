@@ -21,18 +21,29 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
             <p>Ini Contoh Paragraf HTML.</p>
             <?php
-            echo "Halo Dunia!"
+            echo "Halo Dunia!<br>";
+            echo "Nama Saya Akmal Fadhillah Dwiputra";
             ?>
         </section>
 
+
         <section id="about">
+            <?php
+            $NIM = "2511500090";
+            $nim = "2511500090";
+            ?>
            <h2>Kontak Saya</h2>
+            <p>
+                <strong>NIM:<strong>
+                    <?php
+                    echo $NIM;
+                    ?>
+            </p>
             <p><strong>NIM:</strong> 2511500090</p>
             <p><strong>Nama Lengkap:</strong> Akmal Fadhillah Dwiputra 😎</p>
             <p><strong>Tempat Lahir:</strong>Pangkalpinang😏</p>
