@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul Halaman</title>
+        <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <header>
+        <h1>Ini Header</h1>
+        <button class="menu-toogle" id="menuToogle" aria-label="Toogle Navigation"> 
+            &#9776;
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Selamat Datang</h2>
+            <p>Ini Contoh Paragraf HTML.</p>
+        </section>
+
+        <section id="about">
+           <h2>Kontak Saya</h2>
+            <p><strong>NIM:</strong> 2511500090</p>
+            <p><strong>Nama Lengkap:</strong> Akmal Fadhillah Dwiputra 😎</p>
+            <p><strong>Tempat Lahir:</strong>Pangkalpinang😏</p>
+            <p><strong>Tanggal Lahir:</strong>29 Maret 2004</p>
+            <p><strong>Hobby:</strong>Push Rank ML🎮</p>
+            <p><strong>Pasangan:</strong>Fitriani💞</p>
+            <p><strong>Pekerjaan:</strong>Bantu orang tua🍔</p>
+            <p><strong>Nama Orang Tua:</strong>Firta Karini👩‍🦰 dan Defiar Fitriansyah👨‍🦰</p>
+            <p><strong>Nama Kakak:</strong>Revia Defika👩‍🎓</p>
+            <p><strong>Nama Adek:</strong>Nabilla Nasywa dan Rayya Azalea</p>
+        </section>
+
+        <section id="contact">
+            <h2>Kontak Kami</h2>
+            <form action="#" method="GET">
+                <div class="form-group">
+                    <label for="txtNama">Nama:</label>
+                    <input maxlength="30" type="text" id="txtNama" name="txtNama" placeholder="Masukkan Nama" required autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtEmail">Email:</label>
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan Email" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtPesan"><span>Pesan Anda:</span>
+                        <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
+                        <small id="charCount">0/200 karakter</small>
+                    </label>
+
+                <div class="button-group">
+                    <button type="submit">Kirim</button>
+                    <button type="reset">Batal</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Akmal Fadhillah Dwiputra [2511500090]</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
