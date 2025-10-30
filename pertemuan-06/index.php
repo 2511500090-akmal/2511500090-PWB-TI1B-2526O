@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Judul Halaman</title>
+    
         <link rel="stylesheet" href="style.css"
 </head>
 <body>
@@ -25,6 +26,9 @@
         <section id="home">
             <h2>Selamat Datang</h2>
             <p>Ini Contoh Paragraf HTML.</p>
+            <?php
+            echo "Halo Dunia!"
+            ?>
         </section>
 
         <section id="about">
