@@ -31,7 +31,6 @@
             ?>
         </section>
 
-
             <?php
             $nim             = "2511500090";
             $nama_lengkap    = "Akmal Fadhillah Dwiputra";
@@ -45,16 +44,17 @@
             $nama_adek       = "Nabilla Nasywa dan Rayya Azalea";
       ?>
 
-            <p><strong>NIM:</strong> 2511500090</p>
-            <p><strong>Nama Lengkap:</strong> Akmal Fadhillah Dwiputra 😎</p>
-            <p><strong>Tempat Lahir:</strong>Pangkalpinang😏</p>
-            <p><strong>Tanggal Lahir:</strong>29 Maret 2004</p>
-            <p><strong>Hobby:</strong>Push Rank ML🎮</p>
-            <p><strong>Pasangan:</strong>Fitriani💞</p>
-            <p><strong>Pekerjaan:</strong>Bantu orang tua🍔</p>
-            <p><strong>Nama Orang Tua:</strong>Firta Karini👩‍🦰 dan Defiar Fitriansyah👨‍🦰</p>
-            <p><strong>Nama Kakak:</strong>Revia Defika👩‍🎓</p>
-            <p><strong>Nama Adek:</strong>Nabilla Nasywa dan Rayya Azalea</p>
+        </section id="about">
+            <p><strong>NIM:</strong>$nim</p>
+            <p><strong>Nama Lengkap:</strong>$nama_lengkap</p>
+            <p><strong>Tempat Lahir:</strong>$tempat_lahir</p>
+            <p><strong>Tanggal Lahir:</strong>$tanggal_lahir</p>
+            <p><strong>Hobby:</strong>$hobi</p>
+            <p><strong>Pasangan:</strong>$pasangan</p>
+            <p><strong>Pekerjaan:</strong>$pekerjaan</p>
+            <p><strong>Nama Orang Tua:</strong>$nama_orang_tua</p>
+            <p><strong>Nama Kakak:</strong>$nama_kakak</p>
+            <p><strong>Nama Adek:</strong>$nama_adek</p>
         </section>
 
         <section id="contact">
