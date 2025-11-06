@@ -32,17 +32,16 @@
         </section>
 
     <?php
-      $nim             = "2511500091";
-      $nama_lengkap    = "Muhammad Aidil Zaky";
-      $tempat_lahir    = "Pangkalpinang";
-      $tanggal_lahir   = "13 Oktober 2007";
-      $hobi            = "Jual beli COD dan akun game 🎮, serta mempelajari hal-hal baru tentang teknologi 💻 dan dunia digital 🌐";
-      $pasangan        = "Elsya Vebrianti – pasangan terbaik yang saya temui sejak SMK kelas 10, dan semoga nanti bisa jadi pasangan hidup saya ❤️🔥";
-      $pekerjaan       = "Mahasiswa";
-      $nama_ayah       = "Wandy Aprizal";
-      $nama_ibu        = "Denti Seprianti";
-      $adik_laki       = "Faris Fatih";
-      $adik_perempuan  = "Aura Aliana";
+            $nim             = "2511500090";
+            $nama_lengkap    = "Akmal Fadhillah Dwiputra";
+            $tempat_lahir    = "Pangkalpinang";
+            $tanggal_lahir   = "29 Oktober 2004";
+            $hobi            = "Push Rank ML🎮";
+            $pasangan        = "Fitriani💞";
+            $pekerjaan       = "Bantu orang tua🍔";
+            $nama_orang_tua  = "Firta Karini👩‍🦰 dan Defiar Fitriansyah👨‍🦰";
+            $nama_kakak      = "Revia Defika👩‍🎓";
+            $nama_adek       = "Nabilla Nasywa dan Rayya Azalea";
       ?>
 
 <?php
@@ -421,22 +420,18 @@
       </div>
     </section>
 
-    <section id="about">
-      <h2>Tentang Saya</h2>
-      <div class="about-container">
-        <p><strong>NIM:</strong> <?php echo $nim; ?></p>
-        <p><strong>Nama Lengkap:</strong> <?php echo $nama_lengkap; ?></p>
-        <p><strong>Tempat Lahir:</strong> <?php echo $tempat_lahir; ?></p>
-        <p><strong>Tanggal Lahir:</strong> <?php echo $tanggal_lahir; ?></p>
-        <p><strong>Hobi:</strong> <?php echo $hobi; ?></p>
-        <p><strong>Pasangan:</strong> <?php echo $pasangan; ?></p>
-        <p><strong>Pekerjaan:</strong> <?php echo $pekerjaan; ?></p>
-        <p><strong>Nama Ayah:</strong> <?php echo $nama_ayah; ?></p>
-        <p><strong>Nama Ibu:</strong> <?php echo $nama_ibu; ?></p>
-        <p><strong>Nama Adik Laki-laki:</strong> <?php echo $adik_laki; ?></p>
-        <p><strong>Nama Adik Perempuan:</strong> <?php echo $adik_perempuan; ?></p>
-      </div>
-    </section>
+    </section id="about">
+            <p><strong>NIM:</strong>$nim</p>
+            <p><strong>Nama Lengkap:</strong>$nama_lengkap</p>
+            <p><strong>Tempat Lahir:</strong>$tempat_lahir</p>
+            <p><strong>Tanggal Lahir:</strong>$tanggal_lahir</p>
+            <p><strong>Hobby:</strong>$hobi</p>
+            <p><strong>Pasangan:</strong>$pasangan</p>
+            <p><strong>Pekerjaan:</strong>$pekerjaan</p>
+            <p><strong>Nama Orang Tua:</strong>$nama_orang_tua</p>
+            <p><strong>Nama Kakak:</strong>$nama_kakak</p>
+            <p><strong>Nama Adek:</strong>$nama_adek</p>
+        </section>
 
      <section id="contact">
       <h2>Kontak Kami</h2>
@@ -459,7 +454,7 @@
       </form>
     </section>
   </main>
-  
+
         <p>&copy; 2025 Akmal Fadhillah Dwiputra [2511500090]</p>
     </footer>
     <script src="script.js"></script>
