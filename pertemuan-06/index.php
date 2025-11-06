@@ -59,47 +59,48 @@
 
         </section id="ipk">
          <?php
-        $namaMatkul1= "";
-        $namaMatkul2= "";
-        $namaMatkul3= "";
-        $namaMatkul4= ""; 
-        $namaMatkul5= "";
+        $namaMatkul1= "Algoritma dan Struktur Data";
+        $namaMatkul2= "Agama";
+        $namaMatkul3= "Kalkulus";
+        $namaMatkul4= "Logika Informatika"; 
+        $namaMatkul5= "Aplikasi Perkantoran";
 
-        $sksMatkul1= "";
-        $sksMatkul2= "";
-        $sksMatkul3= "";
-        $sksMatkul4= "";
-        $sksMatkul5= "";
+        $sksMatkul1= "4";
+        $sksMatkul2= "2";
+        $sksMatkul3= "4";
+        $sksMatkul4= "4";
+        $sksMatkul5= "4";
 
-        $nilaiHadir1= ""; 
-        $nilaiHadir2= ""; 
-        $nilaiHadir3= ""; 
-        $nilaiHadir4= "";
-        $nilaiHadir5= "";
+        
+        $nilaiHadir1= "90"; 
+        $nilaiHadir2= "90"; 
+        $nilaiHadir3= "85"; 
+        $nilaiHadir4= "100";
+        $nilaiHadir5= "100";
 
-        $nilaiTugas1= ""; 
-        $nilaiTugas2= ""; 
-        $nilaiTugas3= ""; 
-        $nilaiTugas4= ""; 
-        $nilaiTugas5= "";
+        $nilaiTugas1= "60"; 
+        $nilaiTugas2= "70"; 
+        $nilaiTugas3= "90"; 
+        $nilaiTugas4= "80"; 
+        $nilaiTugas5= "100";
 
-        $nilaiUTS1= ""; 
-        $nilaiUTS2= ""; 
-        $nilaiUTS3= ""; 
-        $nilaiUTS4= ""; 
-        $nilaiUTS5= "";
+        $nilaiUTS1= "80"; 
+        $nilaiUTS2= "90"; 
+        $nilaiUTS3= "75"; 
+        $nilaiUTS4= "80"; 
+        $nilaiUTS5= "100";
 
-        $nilaiUAS1= ""; 
-        $nilaiUAS2= ""; 
-        $nilaiUAS3= ""; 
-        $nilaiUAS4= ""; 
-        $nilaiUAS5= "";
+        $nilaiUAS1= "70"; 
+        $nilaiUAS2= "85"; 
+        $nilaiUAS3= "90"; 
+        $nilaiUAS4= "80"; 
+        $nilaiUAS5= "90";
 
-        $nilaiAkhir1= ""; 
-        $nilaiAkhir2= ""; 
-        $nilaiAkhir3= ""; 
-        $nilaiAkhir4= ""; 
-        $nilaiAkhir5= "";
+        $nilaiAkhir1= (0.1 * $nilaiHadir1) + (0.2 * $nilaiTugas1) + (0.3 * $nilaiUTS1) + (0.4 * $nilaiUAS1); 
+        $nilaiAkhir2= (0.1 * $nilaiHadir2) + (0.2 * $nilaiTugas2) + (0.3 * $nilaiUTS2) + (0.4 * $nilaiUAS2); 
+        $nilaiAkhir3= (0.1 * $nilaiHadir3) + (0.2 * $nilaiTugas3) + (0.3 * $nilaiUTS3) + (0.4 * $nilaiUAS3); 
+        $nilaiAkhir4= (0.1 * $nilaiHadir4) + (0.2 * $nilaiTugas4) + (0.3 * $nilaiUTS4) + (0.4 * $nilaiUAS4); 
+        $nilaiAkhir5= (0.1 * $nilaiHadir5) + (0.2 * $nilaiTugas5) + (0.3 * $nilaiUTS5) + (0.4 * $nilaiUAS5);
 
         $grade1= ""; 
         $grade2= ""; 
