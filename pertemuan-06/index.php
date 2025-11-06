@@ -32,32 +32,19 @@
         </section>
 
 
-        <section id="about">
             <?php
-            $NIM = "2511500090";
-            $nim = "2511500090";
-            ?>
-           <h2>Kontak Saya</h2>
-            <p>
-                <strong>NIM:<strong>
-                    <?php
-                    echo $NIM;
-                    ?>
-            </p>
-            <?php
-            $nama = "Akmal Fadhillah Dwiputra"
-            $umur = "21"
-            $tinggi = "158"
-            $aktif = true;
-            echo "Nama: $nama <br>";
-            echo "Umur: $umur tahun <br>";
-            echo "Tinggi: $tinggi meter <br>";
-            echo "Status aktif: " . ($aktif ? "Ya" : "Tidak") . "<br>";
-            var_dump($nama);
-            var_dump($umur);
-            var_dump($tinggi);
-            var_dump($aktif);
-            ?>
+            $nim             = "2511500090";
+            $nama_lengkap    = "Akmal Fadhillah Dwiputra";
+            $tempat_lahir    = "Pangkalpinang";
+            $tanggal_lahir   = "29 Oktober 2004";
+            $hobi            = "Push Rank ML🎮";
+            $pasangan        = "Fitriani💞";
+            $pekerjaan       = "Bantu orang tua🍔";
+            $nama_orang_tua  = "Firta Karini👩‍🦰 dan Defiar Fitriansyah👨‍🦰";
+            $nama_kakak      = "Revia Defika👩‍🎓";
+            $nama_adek       = "Nabilla Nasywa dan Rayya Azalea";
+      ?>
+
             <p><strong>NIM:</strong> 2511500090</p>
             <p><strong>Nama Lengkap:</strong> Akmal Fadhillah Dwiputra 😎</p>
             <p><strong>Tempat Lahir:</strong>Pangkalpinang😏</p>
