@@ -277,7 +277,7 @@
         $totalBobot = $bobot1 + $bobot2 + $bobot3 + $bobot4 + $bobot5;
         $totalSKS = $sksMatkul1 + $sksMatkul2 + $sksMatkul3 + $sksMatkul4 + $sksMatkul5;
 
-        $IPK= "";
+        $IPK= $totalBobot / $totalSKS;
 
         <section id="contact">
             <h2>Kontak Kami</h2>
