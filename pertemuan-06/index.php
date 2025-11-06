@@ -420,18 +420,21 @@
       </div>
     </section>
 
-    </section id="about">
-            <p><strong>NIM:</strong>$nim</p>
-            <p><strong>Nama Lengkap:</strong>$nama_lengkap</p>
-            <p><strong>Tempat Lahir:</strong>$tempat_lahir</p>
-            <p><strong>Tanggal Lahir:</strong>$tanggal_lahir</p>
-            <p><strong>Hobby:</strong>$hobi</p>
-            <p><strong>Pasangan:</strong>$pasangan</p>
-            <p><strong>Pekerjaan:</strong>$pekerjaan</p>
-            <p><strong>Nama Orang Tua:</strong>$nama_orang_tua</p>
-            <p><strong>Nama Kakak:</strong>$nama_kakak</p>
-            <p><strong>Nama Adek:</strong>$nama_adek</p>
-        </section>
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <div class="about-container">
+        <p><strong>NIM:</strong> <?php echo $nim; ?></p>
+        <p><strong>Nama Lengkap:</strong> <?php echo $nama_lengkap; ?></p>
+        <p><strong>Tempat Lahir:</strong> <?php echo $tempat_lahir; ?></p>
+        <p><strong>Tanggal Lahir:</strong> <?php echo $tanggal_lahir; ?></p>
+        <p><strong>Hobi:</strong> <?php echo $hobi; ?></p>
+        <p><strong>Pasangan:</strong> <?php echo $pasangan; ?></p>
+        <p><strong>Pekerjaan:</strong> <?php echo $pekerjaan; ?></p>
+        <p><strong>Nama Orang Tua:</strong> <?php echo $nama_orang_tua; ?></p>
+        <p><strong>Nama Kakak:</strong> <?php echo $nama_kakak; ?></p>
+        <p><strong>Nama Adek:</strong> <?php echo $nama_adek; ?></p>
+      </div>
+    </section>
 
      <section id="contact">
       <h2>Kontak Kami</h2>
