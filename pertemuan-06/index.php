@@ -65,36 +65,51 @@
         $namaMatkul4= "Logika Informatika"; 
         $namaMatkul5= "Aplikasi Perkantoran";
 
-        $sksMatkul1= "4";
-        $sksMatkul2= "2";
-        $sksMatkul3= "4";
-        $sksMatkul4= "4";
-        $sksMatkul5= "4";
+        $sksMatkul1= 4;
+        $sksMatkul2= 2;
+        $sksMatkul3= 4;
+        $sksMatkul4= 4;
+        $sksMatkul5= 4;
 
-        
-        $nilaiHadir1= "90"; 
-        $nilaiHadir2= "90"; 
-        $nilaiHadir3= "85"; 
-        $nilaiHadir4= "100";
-        $nilaiHadir5= "100";
+        if ($nilaiHadir1 < 70):
+        $grade1 = "E";
+      endif;
+      if ($nilaiHadir2 < 70):
+        $grade2 = "E";
+      endif;
+      if ($nilaiHadir3 < 70):
+        $grade3 = "E";
+      endif;
+      if ($nilaiHadir4 < 70):
+        $grade4 = "E";
+      endif;
+      if ($nilaiHadir5 < 70):
+        $grade5 = "E";
+      endif;
 
-        $nilaiTugas1= "60"; 
-        $nilaiTugas2= "70"; 
-        $nilaiTugas3= "90"; 
-        $nilaiTugas4= "80"; 
-        $nilaiTugas5= "100";
+        $nilaiHadir1= 90; 
+        $nilaiHadir2= 90; 
+        $nilaiHadir3= 85; 
+        $nilaiHadir4= 100;
+        $nilaiHadir5= 100;
 
-        $nilaiUTS1= "80"; 
-        $nilaiUTS2= "90"; 
-        $nilaiUTS3= "75"; 
-        $nilaiUTS4= "80"; 
-        $nilaiUTS5= "100";
+        $nilaiTugas1= 60; 
+        $nilaiTugas2= 70; 
+        $nilaiTugas3= 90; 
+        $nilaiTugas4= 80; 
+        $nilaiTugas5= 100;
 
-        $nilaiUAS1= "70"; 
-        $nilaiUAS2= "85"; 
-        $nilaiUAS3= "90"; 
-        $nilaiUAS4= "80"; 
-        $nilaiUAS5= "90";
+        $nilaiUTS1= 80; 
+        $nilaiUTS2= 90; 
+        $nilaiUTS3= 75; 
+        $nilaiUTS4= 80; 
+        $nilaiUTS5= 100;
+
+        $nilaiUAS1= 70; 
+        $nilaiUAS2= 85; 
+        $nilaiUAS3= 90; 
+        $nilaiUAS4= 80; 
+        $nilaiUAS5= 90;
 
         $nilaiAkhir1= (0.1 * $nilaiHadir1) + (0.2 * $nilaiTugas1) + (0.3 * $nilaiUTS1) + (0.4 * $nilaiUAS1); 
         $nilaiAkhir2= (0.1 * $nilaiHadir2) + (0.2 * $nilaiTugas2) + (0.3 * $nilaiUTS2) + (0.4 * $nilaiUAS2); 
@@ -114,17 +129,150 @@
         $mutu4= ""; 
         $mutu5= "";
 
-        $bobot1= ""; 
-        $bobot2= ""; 
-        $bobot3= ""; 
-        $bobot4= ""; 
-        $bobot5= "";
+        $bobot1 = $mutu1 * $sksMatkul1;
+        $bobot2 = $mutu2 * $sksMatkul2;
+        $bobot3 = $mutu3 * $sksMatkul3;
+        $bobot4 = $mutu4 * $sksMatkul4;
+        $bobot5 = $mutu5 * $sksMatkul5;
 
-        $status1= ""; 
-        $status2= ""; 
-        $status3= ""; 
-        $status4= ""; 
-        $status5= "";
+        switch ($grade1):
+        case "A": $status1 = "LULUS"; break;
+        case "A-": $status1 = "LULUS"; break;
+        case "B+": $status1 = "LULUS"; break;
+        case "B": $status1 = "LULUS"; break;
+        case "B-": $status1 = "LULUS"; break;
+        case "C+": $status1 = "LULUS"; break;
+        case "C": $status1 = "LULUS"; break;
+        case "C-": $status1 = "LULUS"; break;
+        case "D":
+        case "E":
+          $status1 = "GAGAL";
+          break;
+      endswitch;
+
+      switch ($grade2):
+        case "A":
+          $status2 = "LULUS";
+          break;
+        case "A-":
+          $status2 = "LULUS";
+          break;
+        case "B+":
+          $status2 = "LULUS";
+          break;
+        case "B":
+          $status2 = "LULUS";
+          break;
+        case "B-":
+          $status2 = "LULUS";
+          break;
+        case "C+":
+          $status2 = "LULUS";
+          break;
+        case "C":
+          $status2 = "LULUS";
+          break;
+        case "C-":
+          $status2 = "LULUS";
+          break;
+        case "D":
+        case "E":
+          $status2 = "GAGAL";
+          break;
+      endswitch;
+
+      switch ($grade3):
+        case "A":
+          $status3 = "LULUS";
+          break;
+        case "A-":
+          $status3 = "LULUS";
+          break;
+        case "B+":
+          $status3 = "LULUS";
+          break;
+        case "B":
+          $status3 = "LULUS";
+          break;
+        case "B-":
+          $status3 = "LULUS";
+          break;
+        case "C+":
+          $status3 = "LULUS";
+          break;
+        case "C":
+          $status3 = "LULUS";
+          break;
+        case "C-":
+          $status3 = "LULUS";
+          break;
+        case "D":
+        case "E":
+          $status3 = "GAGAL";
+          break;
+      endswitch;
+
+      switch ($grade4):
+        case "A":
+          $status4 = "LULUS";
+          break;
+        case "A-":
+          $status4 = "LULUS";
+          break;
+        case "B+":
+          $status4 = "LULUS";
+          break;
+        case "B":
+          $status4 = "LULUS";
+          break;
+        case "B-":
+          $status4 = "LULUS";
+          break;
+        case "C+":
+          $status4 = "LULUS";
+          break;
+        case "C":
+          $status4 = "LULUS";
+          break;
+        case "C-":
+          $status4 = "LULUS";
+          break;
+        case "D":
+        case "E":
+          $status4 = "GAGAL";
+          break;
+      endswitch;
+
+      switch ($grade5):
+        case "A":
+          $status5 = "LULUS";
+          break;
+        case "A-":
+          $status5 = "LULUS";
+          break;
+        case "B+":
+          $status5 = "LULUS";
+          break;
+        case "B":
+          $status5 = "LULUS";
+          break;
+        case "B-":
+          $status5 = "LULUS";
+          break;
+        case "C+":
+          $status5 = "LULUS";
+          break;
+        case "C":
+          $status5 = "LULUS";
+          break;
+        case "C-":
+          $status5 = "LULUS";
+          break;
+        case "D":
+        case "E":
+          $status5 = "GAGAL";
+          break;
+      endswitch;
 
         $totalBobot= "";
         $totalSKS= "";
