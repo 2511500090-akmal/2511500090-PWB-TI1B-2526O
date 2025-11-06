@@ -75,11 +75,11 @@
         }
 
         footer {
-  background: #007bff;
-  color: #aaa;
-  text-align: center;
-  padding: 10px;
-}
+            background: #007bbf;
+            color: #ffffff;
+            text-align: center;
+            padding: 8px;
+        }
 
         @media (max-width: 600px) {
             #about p {
