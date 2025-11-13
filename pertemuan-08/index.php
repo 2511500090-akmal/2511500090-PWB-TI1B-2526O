@@ -52,7 +52,7 @@ endif;
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
-    <section id="Data mahasiswa">
+    <section id="datamahasiswa">
       <h2>Entry Data Mahasiswa</h2>
       <form action="" method="POST">
         <label for="nim">NIM:</label>
@@ -93,52 +93,26 @@ endif;
     </section>
 
     <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-  $nim            = $_POST["nim"];
-  $nama_lengkap   = $_POST["nama"];
-  $tempat_lahir   = $_POST["tempat_lahir"];
-  $tanggal_lahir  = $_POST["tanggal_lahir"];
-  $hobi           = $_POST["hobi"];
-  $pasangan       = $_POST["pasangan"];
-  $pekerjaan      = $_POST["pekerjaan"];
-  $nama_ortu      = $_POST["nama_ortu"];
-  $nama_kakak     = $_POST["nama_kakak"];
-  $nama_adik      = $_POST["nama_adik"];
 
-  $_SESSION["nim"]           = $nim;
-  $_SESSION["nama_lengkap"]  = $nama_lengkap;
-  $_SESSION["tempat_lahir"]  = $tempat_lahir;
-  $_SESSION["tanggal_lahir"] = $tanggal_lahir;
-  $_SESSION["hobi"]          = $hobi;
-  $_SESSION["pasangan"]      = $pasangan;
-  $_SESSION["pekerjaan"]     = $pekerjaan;
-  $_SESSION["nama_ortu"]     = $nama_ortu;
-  $_SESSION["nama_kakak"]    = $nama_kakak;
-  $_SESSION["nama_adik"]     = $nama_adik;
-
-  header("Location: index.php#about");
-  exit;
-}
 ?>
     <section id="about">
       <section id="about">
-  <h2>Tentang Saya</h2>
-  <?php if (isset($_SESSION["nim"])): ?>
-    <div class="about-container">
-      <p><strong>NIM:</strong> <?= $_SESSION["nim"]; ?></p>
-      <p><strong>Nama Lengkap:</strong> <?= $_SESSION["nama_lengkap"]; ?></p>
-      <p><strong>Tempat Lahir:</strong> <?= $_SESSION["tempat_lahir"]; ?></p>
-      <p><strong>Tanggal Lahir:</strong> <?= $_SESSION["tanggal_lahir"]; ?></p>
-      <p><strong>Hobi:</strong> <?= $_SESSION["hobi"]; ?></p>
-      <p><strong>Pasangan:</strong> <?= $_SESSION["pasangan"]; ?></p>
-      <p><strong>Pekerjaan:</strong> <?= $_SESSION["pekerjaan"]; ?></p>
-      <p><strong>Nama Orang Tua:</strong> <?= $_SESSION["nama_ortu"]; ?></p>
-      <p><strong>Nama Kakak:</strong> <?= $_SESSION["nama_kakak"]; ?></p>
-      <p><strong>Nama Adik:</strong> <?= $_SESSION["nama_adik"]; ?></p>
-    </div>
-  <?php else: ?>
-    <p>Belum ada data mahasiswa yang diinputkan.</p>
-  <?php endif; ?>
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <div class="about-container">
+        <p><strong>NIM:</strong> <?php  ; ?></p>
+        <p><strong>Nama Lengkap:</strong> <?php  ; ?></p>
+        <p><strong>Tempat Lahir:</strong> <?php  ; ?></p>
+        <p><strong>Tanggal Lahir:</strong> <?php ; ?></p>
+        <p><strong>Hobi:</strong> <?php ; ?></p>
+        <p><strong>Pasangan:</strong> <?php ; ?></p>
+        <p><strong>Pekerjaan:</strong> <?php ; ?></p>
+        <p><strong>Nama Orang Tua:</strong> <?php; ?></p>
+        <p><strong>Nama Kakak:</strong> <?php ; ?></p>
+        <p><strong>Nama Adek:</strong> <?php  ?></p>
+      </div>
+    </section>
+
 </section>
 
 
