@@ -13,4 +13,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>menambahkan section id data mahasiswa</li>
   <li>mengubah isi tentang saya lagi</li>
   <li>menambahkan dan mengganti section id data mahasiswa yang baru</li>
+  <li>menambahkan session start</li>
 </ol>
