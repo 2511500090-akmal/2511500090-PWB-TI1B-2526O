@@ -15,4 +15,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>menambahkan dan mengganti section id data mahasiswa yang baru</li>
   <li>menambahkan session start</li>
   <li>mengedit session start karena ada yang salah</li>
+  <li>menghapus session start ternyata sudah ada di paling atas</li>
+  <li>mengubah section id tentang saya menjadi php if isset</li>
 </ol>

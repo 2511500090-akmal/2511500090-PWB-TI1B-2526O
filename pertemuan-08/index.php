@@ -123,7 +123,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <section id="about">
       <section id="about">
   <h2>Tentang Saya</h2>
-
   <?php if (isset($_SESSION["nim"])): ?>
     <div class="about-container">
       <p><strong>NIM:</strong> <?= $_SESSION["nim"]; ?></p>
@@ -141,7 +140,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <p>Belum ada data mahasiswa yang diinputkan.</p>
   <?php endif; ?>
 </section>
-
 
        <section id="about">
       <h2>Tentang Saya</h2>
