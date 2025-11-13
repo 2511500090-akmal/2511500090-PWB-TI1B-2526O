@@ -92,7 +92,6 @@ endif;
       </form>
     </section>
 
-
     <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $nim            = $_POST["nim"];
@@ -122,18 +121,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
     <section id="about">
-      <?php
-            $nim             = "2511500090";
-            $nama_lengkap    = "Akmal Fadhillah Dwiputra";
-            $tempat_lahir    = "Pangkalpinang";
-            $tanggal_lahir   = "29 Oktober 2004";
-            $hobi            = "Push Rank ML🎮";
-            $pasangan        = "Fitriani💞";
-            $pekerjaan       = "Bantu orang tua🍔";
-            $nama_orang_tua  = "Firta Karini👩‍🦰 dan Defiar Fitriansyah👨‍🦰";
-            $nama_kakak      = "Revia Defika👩‍🎓";
-            $nama_adek       = "Nabilla Nasywa dan Rayya Azalea";
-      ?>
+      <section id="about">
+  <h2>Tentang Saya</h2>
+
+  <?php if (isset($_SESSION["nim"])): ?>
+    <div class="about-container">
+      <p><strong>NIM:</strong> <?= $_SESSION["nim"]; ?></p>
+      <p><strong>Nama Lengkap:</strong> <?= $_SESSION["nama_lengkap"]; ?></p>
+      <p><strong>Tempat Lahir:</strong> <?= $_SESSION["tempat_lahir"]; ?></p>
+      <p><strong>Tanggal Lahir:</strong> <?= $_SESSION["tanggal_lahir"]; ?></p>
+      <p><strong>Hobi:</strong> <?= $_SESSION["hobi"]; ?></p>
+      <p><strong>Pasangan:</strong> <?= $_SESSION["pasangan"]; ?></p>
+      <p><strong>Pekerjaan:</strong> <?= $_SESSION["pekerjaan"]; ?></p>
+      <p><strong>Nama Orang Tua:</strong> <?= $_SESSION["nama_ortu"]; ?></p>
+      <p><strong>Nama Kakak:</strong> <?= $_SESSION["nama_kakak"]; ?></p>
+      <p><strong>Nama Adik:</strong> <?= $_SESSION["nama_adik"]; ?></p>
+    </div>
+  <?php else: ?>
+    <p>Belum ada data mahasiswa yang diinputkan.</p>
+  <?php endif; ?>
+</section>
+
 
        <section id="about">
       <h2>Tentang Saya</h2>
