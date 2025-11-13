@@ -10,4 +10,6 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>mengubah isi readme</li>
   <li>mengubah isi tentang saya</li>
+  <li>menambahkan section id data mahasiswa</li>
+  <li>mengubah isi tentang saya lagi</li>
 </ol>

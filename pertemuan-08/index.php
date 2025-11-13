@@ -47,7 +47,7 @@ endif;
       <h2>Selamat Datang</h2>
       <?php
       echo "halo dunia!<br>";
-      echo "nama saya hadi";
+      echo "nama saya akmal";
       ?>
       <p>Ini contoh paragraf HTML.</p>
     </section>
@@ -65,17 +65,6 @@ endif;
             $nama_kakak      = "Revia Defika👩‍🎓";
             $nama_adek       = "Nabilla Nasywa dan Rayya Azalea";
       ?>
-
-      <h2>Tentang Saya</h2>
-      <p><strong>NIM:</strong>
-        <?php
-        echo $nim;
-        ?>
-      </p>
-      <p><strong>Nama Lengkap:</strong>
-        <?php
-        echo $nama_lengkap;
-        ?> &#128526;
       
        <section id ="Data Mahasiswa">
         <?php
