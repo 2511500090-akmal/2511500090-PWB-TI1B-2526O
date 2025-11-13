@@ -52,7 +52,7 @@ header li a:active {
 #home:target~header nav a[href="#home"],
 #about:target~header nav a[href="#about"],
 #contact:target~header nav a[href="#contact"] 
-#Datamahasiswa:target~header nav a[href="#Datamahasiswa"]{
+#Data_mahasiswa:target~header nav a[href="#Datamahasiswa"]{
   background: #fff;
   color: #003366;
   font-weight: bold;
@@ -63,7 +63,7 @@ header li a:active {
 #home,
 #about,
 #contact
-#Datamahasiswa {
+#Data_mahasiswa {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 20px;
@@ -75,7 +75,7 @@ header li a:active {
 #home h2,
 #about h2,
 #contact h2 
-#Datamahasiswa h2{
+#Data_mahasiswa h2{
   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 6px;
