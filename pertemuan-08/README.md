@@ -17,4 +17,5 @@ Proses saya mengerjakan UTS ini sebagai berikut:<br>
   <li>mengedit session start karena ada yang salah</li>
   <li>menghapus session start ternyata sudah ada di paling atas</li>
   <li>mengubah section id tentang saya menjadi php if isset</li>
+  <li>mengubah style entry data mahasiswa</li>
 </ol>
