@@ -76,6 +76,20 @@ endif;
         <?php
         echo $nama_lengkap;
         ?> &#128526;
+      
+       <section id ="Data Mahasiswa">
+        <?php
+            $nim             = "2511500090";
+            $nama_lengkap    = "Akmal Fadhillah Dwiputra";
+            $tempat_lahir    = "Pangkalpinang";
+            $tanggal_lahir   = "29 Oktober 2004";
+            $hobi            = "Push Rank ML🎮";
+            $pasangan        = "Fitriani💞";
+            $pekerjaan       = "Bantu orang tua🍔";
+            $nama_orang_tua  = "Firta Karini👩‍🦰 dan Defiar Fitriansyah👨‍🦰";
+            $nama_kakak      = "Revia Defika👩‍🎓";
+            $nama_adek       = "Nabilla Nasywa dan Rayya Azalea";
+      ?>
 
        <section id="about">
       <h2>Tentang Saya</h2>
