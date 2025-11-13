@@ -69,14 +69,14 @@ endif;
       <h2>Tentang Saya</h2>
       <p><strong>NIM:</strong>
         <?php
-        echo $NIM;
+        echo $nim;
         ?>
       </p>
       <p><strong>Nama Lengkap:</strong>
         <?php
-        echo $Nama;
+        echo $nama_lengkap;
         ?> &#128526;
-        
+
        <section id="about">
       <h2>Tentang Saya</h2>
       <div class="about-container">
