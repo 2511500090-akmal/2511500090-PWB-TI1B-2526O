@@ -54,7 +54,7 @@ endif;
 
     <section id="Data mahasiswa">
       <h2>Entry Data Mahasiswa</h2>
-      <form action="proses_entry.php" method="POST">
+      <form action="" method="POST">
         <label for="nim">NIM:</label>
         <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
 
@@ -92,10 +92,8 @@ endif;
       </form>
     </section>
 
+
     <?php
-if (session_status() === PHP_SESSION_NONE) {
-  session_start();
-}
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $nim            = $_POST["nim"];
   $nama_lengkap   = $_POST["nama"];
@@ -123,9 +121,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   exit;
 }
 ?>
-
-
-
     <section id="about">
       <?php
             $nim             = "2511500090";
