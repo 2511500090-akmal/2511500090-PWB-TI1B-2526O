@@ -93,8 +93,9 @@ endif;
     </section>
 
     <?php
-session_start();
-
+if (session_status() === PHP_SESSION_NONE) {
+  session_start();
+}
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $nim            = $_POST["nim"];
   $nama_lengkap   = $_POST["nama"];
