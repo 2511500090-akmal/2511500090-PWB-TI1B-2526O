@@ -141,21 +141,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <?php endif; ?>
 </section>
 
-       <section id="about">
-      <h2>Tentang Saya</h2>
-      <div class="about-container">
-        <p><strong>NIM:</strong> <?php echo $nim; ?></p>
-        <p><strong>Nama Lengkap:</strong> <?php echo $nama_lengkap; ?></p>
-        <p><strong>Tempat Lahir:</strong> <?php echo $tempat_lahir; ?></p>
-        <p><strong>Tanggal Lahir:</strong> <?php echo $tanggal_lahir; ?></p>
-        <p><strong>Hobi:</strong> <?php echo $hobi; ?></p>
-        <p><strong>Pasangan:</strong> <?php echo $pasangan; ?></p>
-        <p><strong>Pekerjaan:</strong> <?php echo $pekerjaan; ?></p>
-        <p><strong>Nama Orang Tua:</strong> <?php echo $nama_orang_tua; ?></p>
-        <p><strong>Nama Kakak:</strong> <?php echo $nama_kakak; ?></p>
-        <p><strong>Nama Adek:</strong> <?php echo $nama_adek; ?></p>
-      </div>
-    </section>
 
     <section id="contact">
       <h2>Kontak Kami</h2>
@@ -186,8 +171,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <p><strong>Email :</strong> <?php echo $sesemail ?></p>
         <p><strong>Pesan :</strong> <?php echo $sespesan ?></p>
       <?php endif; ?>
-
-
 
     </section>
   </main>
