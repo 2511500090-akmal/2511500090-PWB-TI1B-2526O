@@ -76,15 +76,21 @@ endif;
         <?php
         echo $Nama;
         ?> &#128526;
-      </p>
-      <p><strong>Tempat Lahir:</strong> <?php echo $tempat; ?></p>
-      <p><strong>Tanggal Lahir:</strong> 1 Januari 2000</p>
-      <p><strong>Hobi:</strong> Memasak, coding, dan bermain musik &#127926;</p>
-      <p><strong>Pasangan:</strong> Belum ada &hearts;</p>
-      <p><strong>Pekerjaan:</strong> Dosen di ISB Atma Luhur &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> Bapak Setiawan dan Ibu Maria</p>
-      <p><strong>Nama Kakak:</strong> Antonius Setiawan</p>
-      <p><strong>Nama Adik:</strong> <?php echo $sespesan ?></p>
+        
+       <section id="about">
+      <h2>Tentang Saya</h2>
+      <div class="about-container">
+        <p><strong>NIM:</strong> <?php echo $nim; ?></p>
+        <p><strong>Nama Lengkap:</strong> <?php echo $nama_lengkap; ?></p>
+        <p><strong>Tempat Lahir:</strong> <?php echo $tempat_lahir; ?></p>
+        <p><strong>Tanggal Lahir:</strong> <?php echo $tanggal_lahir; ?></p>
+        <p><strong>Hobi:</strong> <?php echo $hobi; ?></p>
+        <p><strong>Pasangan:</strong> <?php echo $pasangan; ?></p>
+        <p><strong>Pekerjaan:</strong> <?php echo $pekerjaan; ?></p>
+        <p><strong>Nama Orang Tua:</strong> <?php echo $nama_orang_tua; ?></p>
+        <p><strong>Nama Kakak:</strong> <?php echo $nama_kakak; ?></p>
+        <p><strong>Nama Adek:</strong> <?php echo $nama_adek; ?></p>
+      </div>
     </section>
 
     <section id="contact">
