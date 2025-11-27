@@ -13,4 +13,6 @@
   <li>echo session ke nilai label section contact selesai</li>
   <li>mengubah kdoe baris 10-19 menjadi bentuk array</li>
   <li>mengahapus kode baris 23-24 dan diubah</li>
+  <li>menambahkan field config</li>
+  <li>menambahkan looping foreach</li>
 </ol>
