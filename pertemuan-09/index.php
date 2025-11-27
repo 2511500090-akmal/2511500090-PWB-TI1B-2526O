@@ -83,8 +83,8 @@ $fieldconfig = [
           <input type="text" id="txtT4Lhr" name="txtT4Lhr" placeholder="Masukkan Tempat Lahir" required>
         </label>
 
-        <label for="txtTglLhr"><span>Tanggal Lahir:</span>
-          <input type="text" id="txtTglLhr" name="txtTglLhr" placeholder="Masukkan Tanggal Lahir" required>
+        <label for="txtTanggal"><span>Tanggal Lahir:</span>
+          <input type="text" id="txtTanggal" name="txtTanggal" placeholder="Masukkan Tanggal Lahir" required>
         </label>
 
         <label for="txtHobi"><span>Hobi:</span>
