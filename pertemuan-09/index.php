@@ -30,7 +30,7 @@ $fieldconfig = [
   "ortu" => ["label" => "Ortu:", "suffix" => ""],
   "kakak" => ["label" => "Kakak:", "suffix" => ""],
   "adik" => ["label" => "Adik:", "suffix" => ""],
-]
+];
 ?>
 
 <!DOCTYPE html>
