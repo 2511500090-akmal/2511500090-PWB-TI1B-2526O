@@ -126,18 +126,6 @@ $fieldconfig = [
           <?= $metadata["suffix"] ?>
         </p>
       <?php endforeach; ?>
-      <p><strong>NIM:</strong> <?= $_SESSION["biodata"]["nim"] ?? "" ?></p>
-      <p><strong>Nama Lengkap:</strong> <?= $_SESSION["biodata"]["nama"] ?? "" ?> 😎</p>
-      <p><strong>Tempat Lahir:</strong> <?= $_SESSION["biodata"]["tempat"] ?? "" ?></p>
-      <p><strong>Tanggal Lahir:</strong> <?= $_SESSION["biodata"]["tanggal"] ?? "" ?></p>
-      <p><strong>Hobi:</strong> <?= $_SESSION["biodata"]["Hobi"] ?? "" ?> 🎵</p>
-      <p><strong>Pasangan:</strong> <?= $_SESSION["biodata"]["pasangan"] ?? "" ?> ♥</p>
-      <p><strong>Pekerjaan:</strong> <?= $_SESSION["biodata"]["pekerjaan"] ?? "" ?> © 2025</p>
-      <p><strong>Nama Orang Tua:</strong> <?= $_SESSION["biodata"]["ortu"] ?? "" ?></p>
-      <p><strong>Nama Kakak:</strong> <?= $_SESSION["biodata"]["kakak"] ?? "" ?></p>
-      <p><strong>Nama Adik:</strong> <?= $_SESSION["biodata"]["adik"] ?? "" ?></p>
-    </section>
-
     <section id="contact">
       <h2>Kontak Kami</h2>
       <form action="proses.php" method="POST">
