@@ -1,20 +1,20 @@
 <?php
 session_start();
 
-$sesnama = "";
-if (isset($_SESSION["sesnama"])):
-  $sesnama = $_SESSION["sesnama"];
-endif;
+$sesnama = $_SESSION["sesnama"] ?? "";
+$sesemail = $_SESSION["sesemail"] ?? "";
+$sespesan = $_SESSION["sespesan"] ?? "";
 
-$sesemail = "";
-if (isset($_SESSION["sesemail"])):
-  $sesemail = $_SESSION["sesemail"];
-endif;
-
-$sespesan = "";
-if (isset($_SESSION["sespesan"])):
-  $sespesan = $_SESSION["sespesan"];
-endif;
+$sesnim = $_SESSION["nim"] ?? "";
+$sesnama_mhs = $_SESSION["nama"] ?? "";
+$sestempat = $_SESSION["tempat"] ?? "";
+$sestgl_lahir = $_SESSION["tgl_lahir"] ?? "";
+$seshobi = $_SESSION["hobi"] ?? "";
+$sespasangan = $_SESSION["pasangan"] ?? "";
+$sespekerjaan = $_SESSION["pekerjaan"] ?? "";
+$sesortu = $_SESSION["ortu"] ?? "";
+$seskakak = $_SESSION["kakak"] ?? "";
+$sesadik = $_SESSION["adik"] ?? "";
 ?>
 
 <!DOCTYPE html>
@@ -109,7 +109,7 @@ endif;
         <p><strong>Pekerjaan:</strong> <?php ; ?></p>
         <p><strong>Nama Orang Tua:</strong> <?php; ?></p>
         <p><strong>Nama Kakak:</strong> <?php ; ?></p>
-        <p><strong>Nama Adek:</strong> <?php  ?></p>
+        <p><strong>Nama Adek:</strong> <?php ; ?></p>
       </div>
     </section>
 
