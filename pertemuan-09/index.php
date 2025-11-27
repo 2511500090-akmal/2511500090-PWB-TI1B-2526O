@@ -122,11 +122,11 @@ $fieldconfig = [
       <?php foreach ($fieldconfig as $kunci => $metadata): ?>
         <p>
           <strong><?= $metadata["label"] ?></strong>
-          <?= htmlspecialchars(string: $biodata[$kunci] ?? "") ?>
+          <?= htmlspecialchars($biodata[$kunci] ?? "") ?>
           <?= $metadata["suffix"] ?>
         </p>
       <?php endforeach; ?>
-      
+
       <p><strong>NIM:</strong> <?= $txtNim ?></p>
       <p><strong>Nama Lengkap:</strong> <?= $txtNmLengkap ?> &#128526;</p>
       <p><strong>Tempat Lahir:</strong> <?= $txtT4Lhr ?></p>
