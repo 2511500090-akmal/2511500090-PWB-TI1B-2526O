@@ -15,8 +15,7 @@ $sespesan = "";
 if (isset($_SESSION["sespesan"])):
   $sespesan = $_SESSION["sespesan"];
 endif;
-
-<?php 
+ 
 $biodata = $_SESSION["biodata"] ?? [];
 
 $fieldconfig = [
