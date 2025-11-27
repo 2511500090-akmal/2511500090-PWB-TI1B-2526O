@@ -126,17 +126,16 @@ $fieldconfig = [
           <?= $metadata["suffix"] ?>
         </p>
       <?php endforeach; ?>
-
-      <p><strong>NIM:</strong> <?= $txtNim ?></p>
-      <p><strong>Nama Lengkap:</strong> <?= $txtNmLengkap ?> &#128526;</p>
-      <p><strong>Tempat Lahir:</strong> <?= $txtT4Lhr ?></p>
-      <p><strong>Tanggal Lahir:</strong> <?= $txtTglLhr ?></p>
-      <p><strong>Hobi:</strong> <?= $txtHobi ?> &#127926;</p>
-      <p><strong>Pasangan:</strong> <?= $txtPasangan ?> &hearts;</p>
-      <p><strong>Pekerjaan:</strong> <?= $txtKerja ?> &copy; 2025</p>
-      <p><strong>Nama Orang Tua:</strong> <?= $txtNmOrtu ?></p>
-      <p><strong>Nama Kakak:</strong> <?= $txtNmKakak ?></p>
-      <p><strong>Nama Adik:</strong> <?= $txtNmAdik ?></p>
+      <p><strong>NIM:</strong> <?= $_SESSION["biodata"]["nim"] ?? "" ?></p>
+      <p><strong>Nama Lengkap:</strong> <?= $_SESSION["biodata"]["nama"] ?? "" ?> 😎</p>
+      <p><strong>Tempat Lahir:</strong> <?= $_SESSION["biodata"]["tempat"] ?? "" ?></p>
+      <p><strong>Tanggal Lahir:</strong> <?= $_SESSION["biodata"]["tanggal"] ?? "" ?></p>
+      <p><strong>Hobi:</strong> <?= $_SESSION["biodata"]["Hobi"] ?? "" ?> 🎵</p>
+      <p><strong>Pasangan:</strong> <?= $_SESSION["biodata"]["pasangan"] ?? "" ?> ♥</p>
+      <p><strong>Pekerjaan:</strong> <?= $_SESSION["biodata"]["pekerjaan"] ?? "" ?> © 2025</p>
+      <p><strong>Nama Orang Tua:</strong> <?= $_SESSION["biodata"]["ortu"] ?? "" ?></p>
+      <p><strong>Nama Kakak:</strong> <?= $_SESSION["biodata"]["kakak"] ?? "" ?></p>
+      <p><strong>Nama Adik:</strong> <?= $_SESSION["biodata"]["adik"] ?? "" ?></p>
     </section>
 
     <section id="contact">
