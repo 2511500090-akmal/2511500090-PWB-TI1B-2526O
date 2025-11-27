@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $_SESSION["nim"]           = $nim;
   $_SESSION["nama_lengkap"]  = $nama_lengkap;
   $_SESSION["tempat_lahir"]  = $tempat_lahir;
-  $_SESSION["tanggal_lahir"] = $tanggal_lahir;
+  $_SESSION["tanggal"]       = $tanggal;
   $_SESSION["hobi"]          = $hobi;
   $_SESSION["pasangan"]      = $pasangan;
   $_SESSION["pekerjaan"]     = $pekerjaan;
