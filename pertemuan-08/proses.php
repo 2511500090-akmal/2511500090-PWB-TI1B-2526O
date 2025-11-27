@@ -3,7 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $nim            = $_POST["nim"];
   $nama_lengkap   = $_POST["nama"];
   $tempat_lahir   = $_POST["tempat_lahir"];
-  $tanggal_lahir  = $_POST["tanggal_lahir"];
+  $tanggal        = $_POST["tanggal"];
   $hobi           = $_POST["hobi"];
   $pasangan       = $_POST["pasangan"];
   $pekerjaan      = $_POST["pekerjaan"];
