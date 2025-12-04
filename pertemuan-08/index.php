@@ -91,7 +91,7 @@ $sesadik = $_SESSION["adik"] ?? "";
         </div>
       </form>
     </section>
-
+kajsndkhkdhjkajn,andkand
     <?php
 
 ?>
