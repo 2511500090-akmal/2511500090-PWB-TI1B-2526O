@@ -6,4 +6,6 @@
   <li>membuat phpmyadmin</li>
   <li>membuat folder db_pwd2025</li>
   <li>membuat tbl_tamu di phpmyadmin</li>
+  <li>membuat folder read.php</li>
+  <li>menambahkan kode pada read.php</li>
 </ol>
