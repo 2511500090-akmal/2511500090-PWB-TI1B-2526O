@@ -2,5 +2,7 @@
 
 <ol>
   <li>membuat file baru koneksi php</li>
-  <li>menambahkan kode baru mysqli di koneksi.php</li> 
+  <li>menambahkan kode baru mysqli di koneksi.php</li>
+  <li>membuat phpmyadmin</li>
+  <li>membuat folder db_pwd2025</li>
 </ol>
