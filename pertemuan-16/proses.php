@@ -76,11 +76,10 @@ if (!$stmt) {
 #bind parameter dan eksekusi (s = string)
 mysqli_stmt_bind_param($stmt, "sss", $nama, $email, $pesan);
 
-if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesan sukses
+if (mysqli_stmt_execute($stmt)) {
   unset($_SESSION['old']);
   $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah tersimpan.';
-  redirect_ke('index.php#contact'); #pola PRG: kembali ke form / halaman home
-} else { #jika gagal, simpan kembali old value dan tampilkan error umum
+} else {
   $_SESSION['old'] = [
     'nama'  => $nama,
     'email' => $email,
@@ -90,7 +89,7 @@ if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesa
   $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
   redirect_ke('index.php#contact');
 }
-#tutup statement
+
 mysqli_stmt_close($stmt);
 
 $arrBiodata = [
@@ -106,5 +105,33 @@ $arrBiodata = [
   "adik" => $_POST["txtNmAdik"] ?? ""
 ];
 $_SESSION["biodata"] = $arrBiodata;
+if (!empty($_POST['txtNim'])) {
+
+  $nim     = bersihkan($_POST["txtNim"]);
+  $nama    = bersihkan($_POST["txtNmLengkap"]);
+  $tempat  = bersihkan($_POST["txtT4Lhr"]);
+  $tanggal = bersihkan($_POST["txtTglLhr"]);
+  $hobi    = bersihkan($_POST["txtHobi"]);
+  $pasang  = bersihkan($_POST["txtPasangan"]);
+  $kerja   = bersihkan($_POST["txtKerja"]);
+  $ortu    = bersihkan($_POST["txtNmOrtu"]);
+  $kakak   = bersihkan($_POST["txtNmKakak"]);
+  $adik    = bersihkan($_POST["txtNmAdik"]);
+
+  $sqlBio = "INSERT INTO tbl_biodata
+    (nim, nama_lengkap, tempat_lahir, tanggal_lahir, hobi, pasangan, pekerjaan, nama_ortu, nama_kakak, nama_adik)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+  $stmtBio = mysqli_prepare($conn, $sqlBio);
+  mysqli_stmt_bind_param(
+    $stmtBio,
+    "ssssssssss",
+    $nim, $nama, $tempat, $tanggal, $hobi, $pasang, $kerja, $ortu, $kakak, $adik
+  );
+
+  mysqli_stmt_execute($stmtBio);
+  mysqli_stmt_close($stmtBio);
+}
+
 
 header("location: index.php#about");
